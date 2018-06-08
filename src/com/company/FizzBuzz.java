@@ -17,14 +17,14 @@ public class FizzBuzz {
 
 
         for (int i = 1; i <= fishing.length; i++) {
-            if (((i % 3) == 0) && ((i % 5) == 0)) // Is it a multiple of 5 & 7
+            if (((i % 3) == 0) && ((i % 5) == 0)) // Is it a multiple of 3, 5 & 7
                 fishing[i - 1] = ("Fizz Buzz");
             else if ((i % 3) == 0) // Is it a multiple of 3
                 fishing[i - 1] = ("Fizz");
             else if ((i % 5) == 0) // Is it a multiple of 5
                 fishing[i - 1] = ("Buzz");
             else if ((i % 7) == 0) // Is it a multiple of 7
-                fishing[i - 1] = String.valueOf(i) + (" - Multiple of Seven");
+                fishing[i - 1] = String.valueOf(i) + (" - This number is Multiple of Seven");
             else
                 fishing[i - 1] = String.valueOf(i); // Not a multiple of 5 or 7
         }
