@@ -50,8 +50,14 @@ public class FizzBuzz {
         }
 
         else if (start-end < 10){
-            content[0] = "This won't take long ";
+            content[0] = " This won't take long ";
             content[content.length - 1] = "This won't take long";
+
+        }
+
+        else if (end < start){
+            content[0] = " Ooops ";
+            content[content.length - 1] = " Ooops ";
 
         }
         return content;
